@@ -1,5 +1,5 @@
-#ifndef EXTERN_HEADER_H
-#define EXTERN_HEADER_H
+#ifndef EXTERN_H
+#define EXTERN_H
 
 extern int value;
 
