@@ -8,7 +8,7 @@ void foo(void)
 
 int main(int argc, char **argv)
 {
-    char buf[20];
+    char buf[10];
     if (argc != 2)
         printf("must one argument needed!\n");
     printf("passed message : %s\n", argv[1]);
