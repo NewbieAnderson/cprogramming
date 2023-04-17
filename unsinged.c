@@ -8,12 +8,14 @@ int main(void)
     int w = y;
     unsigned long long int p = 0xFFFFFFFF;
     unsigned long long int q = 0xFFFFFFFFFFFFFFFF;
+    unsigned long long int r = -1;
     printf("unsigned int x = -1\n"
             "unsigned int y = 0xFFFFFFFF\n"
             "int z = x\n"
             "int w = y\n"
             "unsigned long long int p = 0xFFFFFFFF\n"
-            "unsigned long long int q = 0xFFFFFFFFFFFFFFFF\n\n");
+            "unsigned long long int q = 0xFFFFFFFFFFFFFFFF\n"
+            "unsigned long long int r = -1\n\n");
     printf("  signed x : %d\n", x);     /* -1 */
     printf("unsigned x : %u\n\n", x);   /* 4294967295 */
     printf("  signed y : %d\n", y);     /* -1 */
@@ -26,5 +28,7 @@ int main(void)
     printf("unsigned p : %llu\n\n", p); /* 4294967295 */
     printf("  signed q : %lld\n", q);   /* -1 */
     printf("unsigned q : %llu\n\n", q); /* 18446744073709551615 */
+    printf("  singed r : %lld\n", r);   /* -1 */
+    printf("unsinged r : %llu\n", r);   /* 18446744073709551615 */
     return 0;
 }
