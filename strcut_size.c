@@ -21,12 +21,19 @@ struct some_struct_3 {
 int main(void)
 {
     printf("sizeof(int) : %ld\n"
-            "sizeof(double) : %ld\n\n", sizeof(int), sizeof(double));
-    printf("expected size : 7 byte\n"
-            "real size of struct some_struct_1 : %ld byte\n\n", sizeof(struct some_struct_1)); /* real size : 8 byte */
-    printf("expected size : 11 byte\n"
-            "real size of struct some_struct_2 : %ld byte\n\n", sizeof(struct some_struct_2)); /* real size : 16 byte */
-    printf("expected size : 13 or 18 byte\n"
-            "real size of struct some_struct_3 : %ld byte\n\n", sizeof(struct some_struct_3)); /* real size : 24 byte */
+            "sizeof(double) : %ld\n\n"
+            "expected size : 7 byte\n"
+            "real size of struct some_struct_1 : %ld byte\n" /* real size : 8 byte */
+            "\n"
+            "expected size : 11 byte\n"
+            "real size of struct some_struct_2 : %ld byte\n" /* real size : 16 byte */
+            "\n"
+            "expected size : 13 or 18 byte\n"
+            "real size of struct some_struct_3 : %ld byte\n" /* real size : 24 byte */
+            "\n",
+            sizeof(int), sizeof(double),
+            sizeof(struct some_struct_1),
+            sizeof(struct some_struct_2),
+            sizeof(struct some_struct_3));
     return 0;
 }

@@ -2,11 +2,11 @@
 
 int g_data = 128;
 
-void foo(int **dptr)
+void foo(int **double_ptr)
 {
     printf("---------- foo() called ----------\n");
-    **dptr = 32;
-    *dptr = &g_data;
+    **double_ptr = 32;
+    *double_ptr = &g_data;
 }
 
 int main(void)
