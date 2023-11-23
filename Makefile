@@ -7,6 +7,7 @@ src/pointer:
 	gcc -o ./bin/dangling_pointer ./pointer/dangling_pointer.c
 	gcc -o ./bin/double_pointer ./pointer/double_pointer.c
 	gcc -o ./bin/pointing ./pointer/pointing.c
+	gcc -o ./bin/return_stack_addr ./pointer/return_stack_addr.c
 	gcc -o ./bin/string_literal ./pointer/string_literal.c
 
 src/type:
