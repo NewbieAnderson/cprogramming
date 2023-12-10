@@ -11,6 +11,7 @@ src/pointer:
 	gcc -o ./bin/string_literal ./pointer/string_literal.c
 
 src/type:
+	gcc -o ./bin/memory_align ./type/memory_align.c
 	gcc -o ./bin/signed ./type/signed.c
 	gcc -o ./bin/struct_size ./type/struct_size.c
 	gcc -o ./bin/unsinged ./type/unsinged.c
